@@ -17,7 +17,6 @@ public class DropDownPage {
     //2. Select Year --> by visible text
     //3. Select Month -->  by value
     //4. Select Day -->  by index
-    //5. Verify final selected option is California.
 
     //TC#3
     //1.Go to http://practice.cybertekschool.com/dropdown

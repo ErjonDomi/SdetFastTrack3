@@ -1,5 +1,4 @@
 package sdetfastrack.pages;
-import sdetfastrack.utilities.*;
 
 public class UploadPage {
 

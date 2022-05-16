@@ -1,16 +1,20 @@
 package sdetfastrack.pages;
-import sdetfastrack.utilities.*;
-public class RadioButtonPage {
 
+import org.openqa.selenium.support.PageFactory;
+import sdetfastrack.utilities.Driver;
+
+public class RadioButtonPage {
+public RadioButtonPage(){
+    PageFactory.initElements(Driver.getDriver(),this);
+}
     //TC #1:radio buttons
-    //1.GO TO: https://www.seleniumeasy.com/test/basic-radiobutton-demo.html
-    //2. Confirm radio button #Male is NOT  enabled by default
-    //3. Confirm radio button #Female is NOT enabled by default
-    //4. Click radio button #Male to select it.
-    //5. Click to button “Get Checked value”
-    //7. Verify “Radio button 'Male' is checked” message is displayed.
-    //8. Click radio button #Female to select it.
-    //9. Click to button “Get Checked value”
-    //10. Verify “Radio button 'Female' is checked” message is displayed.
+    //1.GO TO: http://practice.cybertekschool.com/radio_buttons
+    //2. Confirm radio button #Blue is enabled by default
+    //3. Confirm radio button #Red is NOT enabled by default
+    //4. Click radio button #Red to select it.
+    //5. Verify “Radio button 'Red' is selected.
+    //6. Verify “Radio button 'Blue' is NOT selected.
+    //7. Select each sport verify each is selected.
+
 
 }

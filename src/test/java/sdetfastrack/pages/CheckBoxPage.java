@@ -1,5 +1,4 @@
 package sdetfastrack.pages;
-import sdetfastrack.utilities.*;
 
 public class CheckBoxPage {
 
@@ -11,10 +10,16 @@ public class CheckBoxPage {
     //5. Click checkbox #2 to deselect it.
     //6. Confirm checkbox #1 is SELECTED.
     //7. Confirm checkbox #2 is NOT selected.
+//
 
-    //TC #2:checkboxes
-    //2. Go to https://www.seleniumeasy.com/test/basic-checkbox-demo.html
-    //3. Verify “Success – Check box is checked” message is NOT displayed.
-    //4. Click to checkbox under “Single Checkbox Demo” section
-    //5. Verify “Success – Check box is checked” message is displayed.
+    //1. Go to http://automationpractice.com/index.php?id_category=3&controller=category#/
+    //2. Click checkbox Size #S to select it.
+    //3. Assert that URL contains size-s.
+    //4.Click checkbox Size #M to select it.
+    //5. Assert that URL contains size-s-m.
+    //6. Click checkbox Size #L to select it.
+    //7. Assert that URL contains size-s-m-l.
+    //8. Click checkbox Categories #Dresses to select it.
+    //9. Assert that URL contains categories-dresses.
+
 }
