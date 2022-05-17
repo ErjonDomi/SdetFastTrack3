@@ -1,7 +1,35 @@
 package sdetfastrack.pages;
 
 
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import sdetfastrack.utilities.Driver;
+
 public class TitleVerification {
+
+    public TitleVerification() {
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
+
+    @FindBy(xpath = "//a[text()='Gmail']")
+    public WebElement gmailButton;
+
+    @FindBy(name = "q")
+    private WebElement googleSearch;
+
+    public void searchApple(){
+        googleSearch.sendKeys("apple"+ Keys.ENTER);
+    }
+
+    public void signIn(){
+
+    }
+
+
+
+
 
     //TC #1: Facebook Title Verification
     //1. Open Chrome browser
