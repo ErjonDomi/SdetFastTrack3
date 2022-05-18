@@ -1,6 +1,33 @@
 package sdetfastrack.pages;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import sdetfastrack.utilities.Driver;
+
 public class CheckBoxPage {
+
+    public CheckBoxPage(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+
+    @FindBy(id = "box1")
+    public WebElement checkBoxOne;
+
+    @FindBy(id = "box2")
+    public WebElement checkBoxTwo;
+
+    @FindBy(id = "layered_id_attribute_group_1")
+    public WebElement sizeSmallCheckbox;
+
+    @FindBy(id = "layered_id_attribute_group_2")
+    public WebElement sizeMediumCheckbox;
+
+    @FindBy(id = "layered_id_attribute_group_3")
+    public WebElement sizeLargeCheckbox;
+
+    @FindBy(id = "layered_category_8")
+    public WebElement dressCheckbox;
 
     //TC #1:checkboxes
     //1. Go to http://practice.cybertekschool.com/checkboxes
