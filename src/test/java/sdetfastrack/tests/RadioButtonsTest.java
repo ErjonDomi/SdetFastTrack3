@@ -31,7 +31,7 @@ public class RadioButtonsTest {
         //6. Verify “Radio button 'Blue' is NOT selected.
         assertFalse("Blue button was  selected",radioButtonPage.blueRadioButton.isSelected());
         //7. Select each sport verify each is selected.
-        List<String> sports= Arrays.asList("basketball","football5456456465","hockey","water_polo");
+        List<String> sports= Arrays.asList("basketball","football","hockey","water_polo");
 
         for (String sport : sports) {
             assertTrue(radioButtonPage.selectSport(sport));

@@ -1,7 +1,26 @@
 package sdetfastrack.pages;
-import sdetfastrack.utilities.*;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import sdetfastrack.utilities.Driver;
 
 public class IframePage {
+
+    public IframePage(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+
+    @FindBy(xpath = "//iframe[@id='mce_0_ifr']")
+    public WebElement iframe;
+
+    public String iframeAsString="mce_0_ifr";
+    //mce_0_ifr
+
+    public int iframeIndex=0;
+
+    @FindBy(xpath = "//p[text()='Your content goes here.']")
+    public WebElement text;
 
     //1. Go to website: http://practice.cybertekschool.com/iframe
     //2. Locate as WebElement
