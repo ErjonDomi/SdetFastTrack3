@@ -1,6 +1,35 @@
 package sdetfastrack.pages;
-import sdetfastrack.utilities.*;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import sdetfastrack.utilities.Driver;
+
 public class ActionPage {
+
+    public ActionPage(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+    @FindBy(xpath = "(//img[@alt='User Avatar'])[1]")
+    public WebElement imageOne;
+
+    @FindBy(xpath = "(//img[@alt='User Avatar'])[2]")
+    public WebElement imageTwo;
+
+    @FindBy(xpath = "(//img[@alt='User Avatar'])[3]")
+    public WebElement imageThree;
+
+    @FindBy(xpath = "//h5[text()='name: user2']")
+    public WebElement userTwo;
+
+    @FindBy(xpath = "//h5[text()='name: user1']")
+    public WebElement userOne;
+
+    @FindBy(xpath = "//h5[text()='name: user3']")
+    public WebElement userThree;
+
+    @FindBy(id = "hot-spot")
+    public WebElement hotSpotButton;
 
     //TC#1
     //1. Go to http://practice.cybertekschool.com/hovers
