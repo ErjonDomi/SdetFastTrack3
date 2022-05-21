@@ -51,6 +51,4 @@ public class ActionPage {
     //2. Right click to the	box.
     //3. Alert will open.
     //4. Accept	alert.
-
-
 }
