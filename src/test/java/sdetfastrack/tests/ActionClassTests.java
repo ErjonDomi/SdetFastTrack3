@@ -21,6 +21,8 @@ public class ActionClassTests {
         Driver.getDriver().get("http://practice.cybertekschool.com/hovers");
 
         Actions actions=new Actions(Driver.getDriver());
+
+
         //2. Hover over to first image
         actions.moveToElement(actionPage.imageOne).perform();
         //3. Assert: “name: user1” is displayed
