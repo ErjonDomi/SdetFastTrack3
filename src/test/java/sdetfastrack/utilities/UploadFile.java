@@ -27,6 +27,7 @@ public class UploadFile {
     }
 
 //method for copying file in order to attach file in File open window
+    ///sdhjhckgsgadj
     public static void setClipboardData(String str) {
         StringSelection stringSelection = new StringSelection(str);
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
