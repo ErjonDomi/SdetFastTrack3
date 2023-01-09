@@ -40,6 +40,7 @@ public class ActionPage {
     //6. Hover over to third image
     //7. Assert: “name: user2” is displayed
 
+
     //TC#2
     //1. Go	to https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_ondblclick2
     //2. Switch	to iframe.
